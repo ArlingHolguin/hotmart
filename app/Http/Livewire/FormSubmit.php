@@ -68,6 +68,7 @@ class FormSubmit extends Component
         $contactResponse->subject = "Descarga Ebook";
         $contactResponse->message = "Gracias por depositar su confianza en nosotros, descarga el ebook en este link, https://link.com";
         $cliente =  $this->email;  //reolecto datos del correo del cliente
+        $nombre =  $this->name;
 
         $correoCliente = new ContactResponseMailable($validatedData );
         // return $request->all();
@@ -75,11 +76,8 @@ class FormSubmit extends Component
 
         $this->reset();
 
-         return redirect()->route('form.gracias')->with('info', 'Mensaje Enviado, revisa tu bandeja o spam de '. $cliente);
+         return redirect()->route('form.gracias')->with('info', $nombre. ', <strong>Tu eBook está en tu bandeja de entrada o spam, ve a</strong>  '. $cliente);
 
-
-
-
-        // return redirect()->route('form.gracias');
+        
     }
 }

@@ -36,8 +36,15 @@
                     <li style="list-style:none; "><strong>Correo:</strong> <a href="mailto:{{$contacto['email']}}">{{$contacto['email']}}</a></li> --}}
                     <li style="list-style:none; "><strong>Asunto:</strong> Descarga Ebook</li>
 					<li style="list-style:none; "><strong>Mensaje:</strong> Este es el link de descarga <a href="https://bit.ly/3jbgvs2" target="_blank" rel="noopener noreferrer">Link de descarga</a></li>
-                    
+                    {{-- https://bit.ly/3E7LGyg --}}
+					<li style="list-style:none;  ">
+						<div style="margin-top: 50px;">
+							<strong>Tambien te puede interesar:</strong>  <a href="https://bit.ly/3E7LGyg" target="_blank" rel="noopener noreferrer">Curso Masaje Linfático Brasileño</a></li>
 
+						</div>
+					<a href="https://bit.ly/3E7LGyg" target="_blank" rel="noopener noreferrer">
+						<img style="margin-top: 10px;" src="https://static-media.hotmart.com/hPm0LuGpqwWUvANUdQoHZFoiqv4=/filters:background_color(white)/hotmart/product_pictures/6b12e301-f6de-4471-8f8e-b34b6b1adc0f/F631D919516B4674A774EA273F7E3F25.png" width="100%">
+					</a>
 				</ul>
 			
 				<div style="margin: 30px 0 0; width: 100%; text-align: center; ">
