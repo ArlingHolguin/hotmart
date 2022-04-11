@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('ebook-descarga', [FormController::class, 'create'])->name('form.create');
+Route::post('ebook-descarga/registro', [FormController::class, 'store'])->name('form.store');
+Route::get('ebook-descarga/gracias', [FormController::class, 'gracias'])->name('form.gracias');
 
 Route::middleware([
     'auth:sanctum',
