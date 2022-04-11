@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} | Ebook</title>
 
 
 
@@ -23,6 +23,7 @@
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="{{ asset('js/submit.js') }}" defer></script>
+    <link rel="shortcut icon" href="{{asset('img/icon.png')}}" type="image/x-icon">
 
 </head>
 

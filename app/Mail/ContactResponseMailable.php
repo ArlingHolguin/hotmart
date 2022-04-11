@@ -10,7 +10,7 @@ use Illuminate\Queue\SerializesModels;
 class ContactResponseMailable extends Mailable
 {
     use Queueable, SerializesModels;
-    public $subject = "Ebook | Descarga";
+    public $subject = "Ebook Masajes | Descarga";
     public $contacto;
 
     /**

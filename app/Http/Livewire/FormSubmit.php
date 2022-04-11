@@ -76,7 +76,7 @@ class FormSubmit extends Component
 
         $this->reset();
 
-         return redirect()->route('form.gracias')->with('info', $nombre. ', <strong>Tu eBook está en tu bandeja de entrada o spam, ve a</strong>  '. $cliente);
+         return redirect()->route('form.gracias')->with('info', $nombre. ', <strong>😍 Tu eBook está en tu 📩 bandeja de entrada o spam, ve a</strong>  '. $cliente. '⤵');
 
         
     }
